@@ -7,7 +7,7 @@ const _ = require('lodash');
 const path=require('path');
 
 
-mongoose.connect("mongodb+srv://admin-Srayan:srayan1234@cluster0.s5xycmh.mongodb.net/itemsdb", { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
 
 
 const app = express();
